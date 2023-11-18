@@ -51,6 +51,7 @@ do_mount()
         exit 1
     fi
 
+################# NOTE THIS ONE =)))) IT'S SPECIFIC... #############
     MOUNT_POINT="/media/TRANSCEND"
     log debug "Mount point: ${MOUNT_POINT}"
 
