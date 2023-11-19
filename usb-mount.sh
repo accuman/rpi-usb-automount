@@ -56,7 +56,7 @@ do_mount()
     log debug "Mount point: ${MOUNT_POINT}"
 
     if grep -q " ${MOUNT_POINT} " /etc/mtab; then
-        log error "Mount point ${MOUNT_POINT} already in use, make an unique one"
+        log error "Mount point ${MOUNT_POINT} already in use, exiting"
 	exit 1
 #        log info "Mount point ${MOUNT_POINT} already in use, make an unique one"
 #        MOUNT_POINT+="-${DEVBASE}"
